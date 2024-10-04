@@ -1,0 +1,101 @@
+@bg-color: #d891ee;
+@form-bg: #e09cf6;
+@border-color: #b89deb;
+@font-color: limegreen;
+@input-border-radius: 5px;
+
+@admin-color: #00bfff;
+@manager-color: #a8e4a0;
+@owner-color: #87ceeb;
+@sales-color: #ffcccb;
+@prospect-color: #ffa07a;
+
+body {
+    background-color: @bg-color;
+    font-family: Arial, sans-serif;
+}
+
+form {
+    margin: 50px auto;
+    width: 300px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    background-color: @form-bg;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: @font-color;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: @font-color;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 2px solid @border-color;
+    border-radius: @input-border-radius;
+}
+button {
+    background-color: white;
+    border: 2px solid #ccc;
+    padding: 8px 15px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: lightgray;
+    }
+}
+
+a {
+    color: darkorchid;
+    text-decoration: none;
+    font-size: 12px;
+    display: block;
+    margin-top: 10px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.role {
+    padding: 5px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.admin {
+    background-color: @admin-color;
+    color: #000;
+}
+
+.manager {
+    background-color: @manager-color;
+    color: #000;
+}
+
+.owner {
+    background-color: @owner-color;
+    color: #000;
+}
+
+.sales {
+    background-color: @sales-color;
+    color: #000;
+}
+
+.prospect {
+    background-color: @prospect-color;
+    color: #000;
+}
